@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: monospace;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -54,6 +59,7 @@ a:hover {
 .article h1 {
   color: #82540f9a;
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 .article_p1 {
@@ -63,4 +69,38 @@ a:hover {
 
 .article_p2 {
   color: rgba(27, 27, 27, 0.582);
+}
+
+.img__container {
+  width: 50%;
+  text-transform: uppercase;
+  margin-left: 7%;
+}
+
+/* Texto Imagen */
+
+.img__uno,
+.img__tres {
+  font-family: fantasy;
+}
+.img__dos,
+.img__cutro {
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+.img__tres{
+  font-size: 4rem;
+}
+
+.img__uno-5{
+  display: flex;
+  padding-left: 9rem;
+
+}
+.img__dos{
+  padding-right: 15px;
+}
+.img__cutro{
+  padding-left: 17rem;
 }
