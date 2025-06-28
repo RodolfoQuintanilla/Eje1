@@ -50,25 +50,62 @@ header {
   height: 500px;
 
   background-image: url(../img/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287.jpg);
-
+  object-fit: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+
+  text-align: center;
+  padding-top: 10%;
+}
+
+.section__img__p1 {
+  font-size: 3rem;
+}
+
+.section__img__p2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.header__move {
+  width: 500px;
 }
 
 .header__move input {
   outline: none;
   padding: 7px;
-}
-.input_serch {
-  border-radius: 7px 0 0 7px;
-  border: 2px solid rgb(29, 29, 29);
+  width: 250px;
 }
 
-.input_serch::before {
-  border: #40011e solid 2px;
+/* .cuv {
+  border: red solid 1px;
+  width: 45px;
+  height: 45px;
+} */
+
+.input_serch {
+  /*  border-radius: 7px 0 0 7px; */
+  border: none;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.534);
+  width: 80%;
+}
+
+.input_serch:hover {
+  border-bottom: var(--color3) solid 0.5px;
+}
+
+.header__BtnLibro {
+  border: none;
+  padding: 7px;
+  border-radius: 40%;
+  background-color: white;
+}
+
+.header__BtnLibro:hover {
+  transition-delay: 0.3s;
 }
 
 .header__move {
@@ -92,4 +129,179 @@ nav li:hover {
   border-bottom: 5px solid var(--color4);
   border-radius: 5px;
   margin-bottom: 2px;
+  padding-bottom: 2px;
+  transition: 0.2s;
+}
+
+.header__move__avatars {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.header__icono svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  color: var(--color3);
+  text-align: center;
+}
+
+.header__icono svg :hover {
+  color: var(--color4);
+}
+
+.Libros {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.libros__book {
+  box-shadow: 15px 5px 10px #48529944;
+  width: 250px;
+  height: 470px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.libro__box {
+  width: 100%;
+  height: 75%;
+  background-color: #63bbf2;
+  border-radius: 10px;
+}
+
+.libro__box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.libro__text p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.libro__text {
+  width: 100%;
+  height: 24%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.libro__text h5 {
+  color: var(--color2);
+  font-size: 16px;
+  margin-bottom: 5px;
+  width: 100;
+  height: 30px;
+}
+
+.libro__text button {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--color3);
+  color: white;
+  border: none;
+}
+
+.libro__text button:hover {
+  transition-delay: 0.3s;
+  background-color: white;
+  color: var(--color3);
+  border: 2px solid rgb(58, 58, 58);
+}
+.titulo {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.texto {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.texto__figure {
+  width: 700px;
+  padding: 5px;
+}
+
+.texto__figure img {
+  width: 80%;
+  height: 300px;
+  object-fit: fill;
+  padding: 5px;
+}
+
+.texto__Text {
+  width: 500px;
+  text-align: center;
+}
+
+.texto__Text h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: var(--color3);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.datos {
+  width: 300px;
+  color: white;
+}
+
+.datos h5 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.RedesSociales__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+}
+
+.RedesSociales h5 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.RS__box {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--color1);
+  font-size: 1rem;
+}
+
+.redes {
+  width: 300px;
+}
+
+.news {
+  width: 300px;
 }
